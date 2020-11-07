@@ -8,4 +8,11 @@ public class Wheel {
 		this.brand = brand;
 		this.diameter = diameter;
 	}
+	
+	public String getWheelInfo() {
+		String info = " - 'brand': " + this.brand + "\t <--> " +
+					  "'diameter': " + this.diameter +"\n";
+		
+		return info;
+	}
 }

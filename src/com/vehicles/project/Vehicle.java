@@ -15,4 +15,9 @@ public abstract class Vehicle {
 		this.brand = brand;
 		this.color = color;
 	}
+	
+	
+	//-----   FASE 2   -----
+	
+	abstract Boolean plateIsCorrect();
 }
