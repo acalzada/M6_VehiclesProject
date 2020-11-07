@@ -27,13 +27,15 @@ public class Car extends Vehicle {
 		this.wheels.add(rightWheel);
 	}
 	
+	//-----   FASE 1   -----
+	
 	public String toString() {
-		String info = "Car information \n -------------------\n";
+		String info = "   Car information \n -------------------\n";
 		
-		info = info + " - plate: " + this.plate + "\n" +
-					  " - brand: " + this.brand + "\n" +
-					  " - color: " + this.color + "\n\n" +
-					  " Wheels info \n ----------------- \n";
+		info = info + " - plate: '" + this.plate + "'\n" +
+					  " - brand: '" + this.brand + "'\n" +
+					  " - color: '" + this.color + "'\n\n" +
+					  "   Wheels info \n ----------------- \n";
 		
 		for(Wheel wheel : this.wheels) {
 			info = info + wheel.getWheelInfo();

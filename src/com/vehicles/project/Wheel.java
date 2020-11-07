@@ -10,9 +10,17 @@ public class Wheel {
 	}
 	
 	public String getWheelInfo() {
-		String info = " - 'brand': " + this.brand + "\t <--> " +
-					  "'diameter': " + this.diameter +"\n";
+		String info = " - brand: '" + this.brand + "'\t <--> " +
+					  "diameter: '" + this.diameter + "'\n";
 		
 		return info;
 	}
+	
+	public static Boolean wheelDiameterIsCorrect(double diameter) {
+		if (diameter > 0.4 && diameter < 4) {
+			return true;
+		}
+		return false;
+	}
+	
 }
